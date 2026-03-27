@@ -43,8 +43,6 @@ Project A follows a structured production workflow:
 ## Included Public Documents
 
 - `docs/blueprint.md` (project pitch, target session, core loop)
-- `docs/plan_mvp.md` (MVP execution guide)
-- `docs/plan_mvp_to_demo.md` (MVP -> Demo transition guide)
 - `docs/qa_checklist.md` (test gate checklist)
 - `docs/risk_register.md` (production risk tracking)
 
