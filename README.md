@@ -46,7 +46,7 @@ This repository is the **public showcase**: design intent, process artifacts, sc
 - **Non-commercial** playtest drops unless a release explicitly states otherwise. Not a finished commercial product.
 - **No game source on `main`.** Zips are **not** committed to git—only attached to Releases.
 
-Maintainer: export → zip → Release steps live in the **private dev repository** (not in this public tree). Release notes template: [`docs/release_playtest_template.md`](docs/release_playtest_template.md).
+Maintainer: export → zip → Release steps and **release notes template** live in the **private dev repository** (not in this public tree).
 
 **Feedback:** [Issues](https://github.com/umut-yasin-yilmaz/project-a-showcase/issues) welcome with build tag and repro steps.
 
@@ -60,7 +60,6 @@ Maintainer: export → zip → Release steps live in the **private dev repositor
 | [`docs/qa_checklist.md`](docs/qa_checklist.md) | MVP + Demo QA gates (Turkish checklist, aligned with shipped MVP) |
 | [`docs/risk_register.md`](docs/risk_register.md) | Production risks and mitigations |
 | [`docs/credits_and_licenses.md`](docs/credits_and_licenses.md) | Godot MIT, credits, rights |
-| [`docs/release_playtest_template.md`](docs/release_playtest_template.md) | Copy-paste Release description |
 
 **Suggested reading order:** blueprint → QA checklist → risk register.
 
@@ -136,7 +135,7 @@ Bu depo **herkese açık vitrin** katmanıdır: tasarım niyeti, süreç doküma
 - Varsayılan olarak **ticari olmayan** playtest; nihai ürün değildir.
 - **`main` dalında oyun kaynağı yok.** Zip’ler repoya commit edilmez.
 
-Bakım: export → zip → Release adımları **özel geliştirme deposunda** (bu public ağaçta yok). Release metni şablonu: [`docs/release_playtest_template.md`](docs/release_playtest_template.md).
+Bakım: export → zip → Release adımları ve **release metni şablonu** **özel geliştirme deposunda** (bu public ağaçta yok).
 
 **Geri bildirim:** [Issues](https://github.com/umut-yasin-yilmaz/project-a-showcase/issues)
 
@@ -150,7 +149,6 @@ Bakım: export → zip → Release adımları **özel geliştirme deposunda** (b
 | [`docs/qa_checklist.md`](docs/qa_checklist.md) | MVP + Demo test kapıları (**kalite kontrol listesi / QA**) |
 | [`docs/risk_register.md`](docs/risk_register.md) | **Risk kaydı** — üretim riskleri ve önlemler |
 | [`docs/credits_and_licenses.md`](docs/credits_and_licenses.md) | Godot MIT, credits, haklar |
-| [`docs/release_playtest_template.md`](docs/release_playtest_template.md) | Release açıklaması şablonu |
 
 **Önerilen okuma sırası:** blueprint → QA checklist → risk register.
 
