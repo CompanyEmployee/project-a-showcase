@@ -1,49 +1,48 @@
-# GitHub Release — pre-demo / playtest (copy-paste)
+# GitHub Release — playtest build (copy-paste)
 
-Use when executing [Step 2 in `distribution_plan.md`](distribution_plan.md#step-2--first-playtest--pre-demo-release-when-you-have-a-build).  
-Attach your **zipped export** as the release asset (do not commit the zip to `main`).
+Use with [Godot export steps](godot_export_and_release.md).  
+Attach your **zipped Windows export** as the release asset (do not commit the zip to `main`).
 
 ## Suggested tag
 
-`playtest-0.1` or `pre-demo-YYYY-MM` (pick one scheme and stay consistent).
+`playtest-0.1` or `build-YYYY-MM-DD` (stay consistent across releases).
 
 ## Suggested release title
 
-`Pre-demo playtest build (not the Steam demo)`
+`Windows playtest build`
 
 ## Release description (English — paste into GitHub)
 
 ```markdown
 ### What this is
 
-- **Pre-demo / playtest** build of **Project A** (2D roguelite / survivor-like, Godot 4.6.1).
-- **Not** the final store demo. The **official demo** will be on **Steam** when available.
+- **Development / playtest** build of **Project A** (2D roguelite / survivor-like, Godot 4.6.x).
+- **Not** a finished commercial release. For testing and feedback only.
 
 ### Requirements
 
-- **Windows** (adjust if you ship another platform).
-- Extract the zip and run the executable inside.
+- **Windows x64**. Extract the zip and run **ProjectA.exe** from the folder (keep all files together).
 
 ### Notes
 
-- For feedback, use [Issues](https://github.com/umut-yasin-yilmaz/project-a-showcase/issues) or your preferred channel (link if different).
-- No commercial sale; early testing only.
+- For feedback, use [Issues](https://github.com/umut-yasin-yilmaz/project-a-showcase/issues) or your preferred channel.
+- **Non-commercial**; no paid product attached to this zip.
 
 ### AI / process
 
 - Development uses **AI as an implementation assistant**; design acceptance is manual. See repository README for workflow context.
 ```
 
-## Kısa Türkçe not (isteğe bağlı, aynı Release açıklamasının altına)
+## Kısa Türkçe not (isteğe bağlı)
 
 ```markdown
 
 ---
 
-**Türkçe:** Bu sürüm **ön-demo / playtest** amaçlıdır; **mağaza demosu değildir**. Resmi demo **Steam**’de yayınlandığında oradan sunulacaktır.
+**Türkçe:** Geliştirme / **playtest** sürümüdür; ticari nihai sürüm değildir. Zip’i açıp **ProjectA.exe**’yi çalıştırın; klasördeki dosyaları ayırmayın.
 ```
 
 ## After publish
 
-- If the repo is **public**, anyone with the Releases URL can download.
-- If the repo is still **private**, only users with repo access can download—invite testers or share the zip another way.
+- **Private repo:** only users with access can download.
+- **Public repo:** anyone with the Releases link can download.

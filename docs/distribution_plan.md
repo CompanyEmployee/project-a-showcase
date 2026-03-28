@@ -33,23 +33,27 @@ Do this **once** you are happy with the showcase content (no more half-finished 
 
 **While the showcase is still private:** pinning helps only you on your profile; defer the “portfolio pin” until **Step 0.5** is done.
 
-## Step 2 — First playtest / pre-demo Release (when you have a build)
+## Step 2 — Playtest Release (Godot export → zip → GitHub)
 
-1. Export a **Windows** (or chosen) build from Godot in the **private** dev repo.
-2. Zip the export folder; **do not** `git add` large binaries to `main` history on showcase—use **Releases** only.
+Detailed steps: [`docs/godot_export_and_release.md`](godot_export_and_release.md).
+
+1. In **private** `project-a`, export **Windows Desktop** (preset → `build/windows/ProjectA.exe`).
+2. Zip the **`build/windows/`** output (exe + `.pck` and any DLLs together). **Do not** commit the zip to either repo’s `main`.
 3. On GitHub: **project-a-showcase** → **Releases** → **Draft a new release**.
-4. Tag example: `playtest-0.1` or `pre-demo-2026-03` (avoid clashing with private dev repo tags if that matters to you).
-5. Title example: `Pre-demo playtest (not Steam demo)`.
-6. Description: use or adapt [`docs/release_playtest_template.md`](release_playtest_template.md) (copy-paste English + optional Turkish block).
-7. Attach the zip as a release asset; **Publish**.
+4. Create a new tag, e.g. `playtest-0.1` or `build-2026-03-28`.
+5. Title example: `Windows playtest build`.
+6. Description: [`docs/release_playtest_template.md`](release_playtest_template.md).
+7. Attach the zip → **Publish**.
 
-**Note:** If you publish a Release **while the repo is still private**, testers need **GitHub access** (or send the zip elsewhere). After the repo is **public**, Release downloads work like any public GitHub project.
+**Note:** While the showcase repo is **private**, only users **with access** can download. After **public**, the same Release is visible to everyone.
 
-## Step 3 — After Steam demo goes live
+## Step 3 — After a store demo exists (later)
 
-1. Edit showcase **README** → **Downloads & distribution**: add the **Steam demo** URL as the canonical link for **everyone**.
-2. **Remove or archive** old GitHub Release assets if you no longer want playtest builds on GitHub.
-3. Scan the README for any old “download here” text and update.
+*Skip until you actually ship a store demo (e.g. Steam).*
+
+1. Update showcase **README** → **Downloads & distribution** with an **official** demo/store link if you want one canonical URL.
+2. **Remove or archive** obsolete GitHub Release playtest assets if needed.
+3. Refresh any download wording so it matches reality.
 
 ## Step 4 — Store compliance
 

@@ -61,10 +61,11 @@ Project A follows a structured production workflow:
 - [`docs/blueprint.md`](docs/blueprint.md) (project pitch, target session, core loop)
 - [`docs/qa_checklist.md`](docs/qa_checklist.md) (test gate checklist)
 - [`docs/risk_register.md`](docs/risk_register.md) (production risk tracking)
-- [`docs/distribution_plan.md`](docs/distribution_plan.md) (downloads / Releases / Steam handoff)
+- [`docs/distribution_plan.md`](docs/distribution_plan.md) (distribution steps overview)
 - [`docs/before_public_checklist.md`](docs/before_public_checklist.md) (before setting repo public)
 - [`docs/step1_pin_profile.md`](docs/step1_pin_profile.md) (after repo is public)
 - [`docs/release_playtest_template.md`](docs/release_playtest_template.md) (playtest Release copy-paste)
+- [`docs/godot_export_and_release.md`](docs/godot_export_and_release.md) (Godot → zip → GitHub Release)
 
 **Suggested reading order:** blueprint → QA checklist → risk register.
 
@@ -103,12 +104,13 @@ This showcase repo is updated with **safe, portfolio-ready** context aligned wit
 
 ## Downloads & distribution
 
-- **Today:** No game binary in git here—only docs and screenshots. The playable build lives in the **private** dev repo.
-- **Before the Steam demo (optional):** A **pre-demo / playtest** build may be published via **GitHub Releases** on this repository. **While the repo is private**, only accounts with access can download assets; **after the repo is public again**, Releases are visible like any public repo. Release titles and notes will clearly say **pre-demo** (not the final store demo).
-- **After the Steam demo is live:** Older GitHub Release builds can be **removed or archived**; the **single official demo link** for everyone becomes **Steam**. This README will be updated so there are no dead download links.
-- **Principle:** Early builds are **non-commercial**; the paid/commercial path stays on the store when you are ready.
+- **Source of truth for code/assets:** the **private** dev repo. This showcase repo does **not** host source on `main`.
+- **Playtest builds:** **Windows** exports from Godot are shipped as **GitHub Release** attachments (zip), **not** committed to git. Full workflow: [`docs/godot_export_and_release.md`](docs/godot_export_and_release.md). Release notes template: [`docs/release_playtest_template.md`](docs/release_playtest_template.md).
+- **While this repo is private:** only accounts **with access** can see Releases and download zips (invite collaborators if needed).
+- **When this repo is public:** the same Releases page becomes world-visible; you can add a one-line pointer here to the latest Release.
+- **Principle:** These zips are **non-commercial** playtest drops. Store-facing demo pages (e.g. Steam) are **out of scope** for this README until that phase is real—then this section can be updated.
 
-Step-by-step checklist for maintainers: [`docs/distribution_plan.md`](docs/distribution_plan.md).  
+Maintainer checklist: [`docs/distribution_plan.md`](docs/distribution_plan.md).  
 Before switching this repo to **public:** [`docs/before_public_checklist.md`](docs/before_public_checklist.md).
 
 ---
@@ -170,7 +172,8 @@ Private iken: README ve Releases’i yalnızca sen ve erişim verdiğin hesaplar
 - [`docs/blueprint.md`](docs/blueprint.md) — pitch, oturum hedefi, çekirdek döngü
 - [`docs/qa_checklist.md`](docs/qa_checklist.md) — test kapısı checklist
 - [`docs/risk_register.md`](docs/risk_register.md) — üretim risk takibi
-- [`docs/distribution_plan.md`](docs/distribution_plan.md) — indirme / Releases / Steam geçişi
+- [`docs/distribution_plan.md`](docs/distribution_plan.md) — dağıtım adımları (genel)
+- [`docs/godot_export_and_release.md`](docs/godot_export_and_release.md) — Godot → zip → Release
 - [`docs/before_public_checklist.md`](docs/before_public_checklist.md) — public yapmadan önce kontrol
 - [`docs/step1_pin_profile.md`](docs/step1_pin_profile.md) — repo public olduktan sonra pin
 - [`docs/release_playtest_template.md`](docs/release_playtest_template.md) — playtest Release metin şablonu
@@ -195,10 +198,11 @@ Ticari indie üretim için: **koruma** (ana içerik private), **kontrollü vitri
 
 ### İndirmeler ve dağıtım
 
-- **Şu an:** Bu vitrinde **oyun binary’si yok** — yalnızca doküman ve ekran görüntüleri. Oynanabilir build **private** geliştirme deposunda.
-- **Steam demo öncesi (isteğe bağlı):** **Ön-demo / playtest** sürümü bu repoda **GitHub Releases** ile yayınlanabilir. Repo **private** iken indirmeyi yalnızca erişimi olan hesaplar yapar; **repo tekrar public olunca** Release’ler de herkese açık repoda olduğu gibi görünür. Başlık ve notlarda **pre-demo** olduğu açıkça yazılır (mağaza demosu değildir).
-- **Steam demo yayında olduktan sonra:** Eski GitHub Release’ler **kaldırılabilir veya arşivlenir**; **tek resmi demo bağlantısı Steam** olur. Bu README güncellenir; kırık indirme linki bırakılmaz.
-- **İlke:** Bu erken build’ler **ticari gelir hedefi taşımaz**; ücretli/yayın yolu mağazada netleşir.
+- **Kod / asset kaynağı:** **private** geliştirme deposu. Bu showcase’in `main` dalında kaynak yok.
+- **Playtest build:** Godot **Windows** export’u **GitHub Releases** üzerinde **zip** olarak paylaşılır; zip **`git` ile commit edilmez**. Adımlar: [`docs/godot_export_and_release.md`](docs/godot_export_and_release.md). Release metni şablonu: [`docs/release_playtest_template.md`](docs/release_playtest_template.md).
+- **Repo private iken:** Release’leri yalnızca **erişimi olan** hesaplar indirebilir (testçi için Collaborators).
+- **Repo public olunca:** Aynı Release sayfası herkese açılır; isteğe bağlı olarak README’ye “son sürüm” satırı eklenebilir.
+- **İlke:** Zip’ler **ticari olmayan** playtest içindir. Mağaza demosu / Steam sayfası gibi konular bu README’de **şimdilik yok**; o aşama gerçekten gelince metin güncellenir.
 
 Adım adım kontrol listesi: [`docs/distribution_plan.md`](docs/distribution_plan.md).  
 Repoyu tekrar **public** yapmadan önce: [`docs/before_public_checklist.md`](docs/before_public_checklist.md).
