@@ -3,8 +3,8 @@
 Public-facing showcase for **Project A**.  
 Main development repository is private to protect commercial production content.
 
-**Current Milestone:** MVP (`MVP-01` -> `MVP-22`)  
-**Current Focus:** Core combat loop, wave flow, and economy readability
+**Milestone:** **MVP shipped** — `MVP-01` → `MVP-22` complete in the private repo; Git tag **`mvp-0.1`**.  
+**Current focus:** Demo / portfolio-facing updates (screenshots, README, safe docs) while keeping source and assets private.
 
 ## Overview
 
@@ -16,20 +16,20 @@ Core loop:
 - Buy upgrades between waves
 - Survive the full run
 
-## Current Scope (Showcase View)
+## Shipped MVP (showcase view)
 
 - Engine: Godot 4.6.1
 - Language: Typed GDScript (production)
 - Target platform: PC (Steam-first)
 - Development model: AI-assisted solo developer workflow
-- Public objective: demonstrate process quality and project direction safely
+- Public objective: demonstrate process quality, shipped MVP discipline, and direction safely (no full source here)
 
 ## Public Repository Purpose
 
 This repository is intentionally curated to show:
 - Design direction and MVP boundaries
 - Development discipline and planning quality
-- Progress snapshots suitable for portfolio/recruiting
+- Progress and **milestone completion** suitable for portfolio/recruiting
 
 ## Professional Workflow
 
@@ -55,14 +55,14 @@ Workflow note:
 ### Public in this repository
 
 - Project vision and high-level gameplay goals
-- Safe progress updates and milestone context
+- Safe progress updates and **MVP-shipped** milestone context
 - Process artifacts that do not expose production internals
 
 ### Intentionally private
 
 - Full gameplay source code and architecture internals
 - Commercial art/audio assets and content pipeline
-- Balance datasets, tuning internals, deployment details
+- Implementation-level balance/tuning and deployment details
 - Any secrets, credentials, or release-sensitive information
 
 ## Why this strategy
@@ -74,8 +74,8 @@ For a commercial indie project, this setup balances:
 
 ## Status
 
-MVP development continues in the private main repository.  
-This showcase repo is updated with safe, portfolio-ready progress context.
+**MVP is complete** in the private main repository (`mvp-0.1`).  
+This showcase repo is updated with **safe, portfolio-ready** context aligned with that milestone.
 
 ---
 
@@ -83,6 +83,8 @@ This showcase repo is updated with safe, portfolio-ready progress context.
 
 Bu depo, `Project A` için herkese açık vitrin deposudur.  
 Oyunun asıl geliştirme deposu, ticari içerik ve üretim detaylarını korumak için private tutulur.
+
+**MVP tamamlandı** (private repoda `mvp-0.1`); bu depo süreç, yön ve güvenli dokümanlarla hizalanır.
 
 Bu public showcase içinde:
 - Projenin yönü ve MVP kapsamı
