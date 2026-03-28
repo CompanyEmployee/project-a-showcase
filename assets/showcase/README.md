@@ -1,13 +1,12 @@
 # Showcase media (`assets/showcase/`)
 
-Public-safe images for the repository README and profile links.
+Public-safe screenshots used by the **root** [`README.md`](../../README.md).
 
 ## Files
 
 | File | Role |
 |------|------|
-| `mvp-screenshot-01.png` … `mvp-screenshot-03.png` | MVP build screenshots (align with Git tag **`mvp-0.1`** or update captions when you refresh the vitrin). |
-| `hero-mvp.svg` | Optional banner asset; root `README.md` does not embed it by default (add an image line if you want a hero later). |
+| `mvp-screenshot-01.png` … `mvp-screenshot-03.png` | MVP build screenshots. Keep them aligned with the build you advertise (e.g. Git tag **`mvp-0.1`**) and update root README captions if you refresh them. |
 
 ## Guidelines
 
@@ -16,4 +15,4 @@ Public-safe images for the repository README and profile links.
 
 ## Wiring
 
-Root [`README.md`](../../README.md) references `assets/showcase/mvp-screenshot-0*.png` and may reference `hero-mvp.svg`. If you rename files, update those paths.
+Root [`README.md`](../../README.md) references `assets/showcase/mvp-screenshot-0*.png`. If you rename files, update those paths.
