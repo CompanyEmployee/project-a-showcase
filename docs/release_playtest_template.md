@@ -1,6 +1,6 @@
 # GitHub Release — playtest build (copy-paste)
 
-Use with [Godot export steps](godot_export_and_release.md).  
+Export → zip → GitHub Release workflow: private **`project-a`** repo → **`docs/godot_export_and_release.md`**.  
 Attach your **zipped Windows export** as the release asset (do not commit the zip to `main`).
 
 ## Suggested tag

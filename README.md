@@ -46,7 +46,7 @@ This repository is the **public showcase**: design intent, process artifacts, sc
 - **Non-commercial** playtest drops unless a release explicitly states otherwise. Not a finished commercial product.
 - **No game source on `main`.** Zips are **not** committed to git—only attached to Releases.
 
-Maintainer workflow (export → zip → Release): [`docs/godot_export_and_release.md`](docs/godot_export_and_release.md) · Release notes template: [`docs/release_playtest_template.md`](docs/release_playtest_template.md)
+Maintainer: export → zip → Release steps live in the **private dev repo** (`docs/godot_export_and_release.md`). Release notes template: [`docs/release_playtest_template.md`](docs/release_playtest_template.md).
 
 **Feedback:** [Issues](https://github.com/umut-yasin-yilmaz/project-a-showcase/issues) welcome with build tag and repro steps.
 
@@ -60,7 +60,6 @@ Maintainer workflow (export → zip → Release): [`docs/godot_export_and_releas
 | [`docs/qa_checklist.md`](docs/qa_checklist.md) | MVP + Demo QA gates (Turkish checklist, aligned with shipped MVP) |
 | [`docs/risk_register.md`](docs/risk_register.md) | Production risks and mitigations |
 | [`docs/credits_and_licenses.md`](docs/credits_and_licenses.md) | Godot MIT, credits, rights |
-| [`docs/godot_export_and_release.md`](docs/godot_export_and_release.md) | Godot → zip → GitHub Release |
 | [`docs/release_playtest_template.md`](docs/release_playtest_template.md) | Copy-paste Release description |
 
 **Suggested reading order:** blueprint → QA checklist → risk register.
@@ -81,6 +80,7 @@ Maintainer workflow (export → zip → Release): [`docs/godot_export_and_releas
 - Commercial art, audio, and content pipeline
 - Implementation-level balance tables beyond what this README and blueprint summarize
 - Secrets, credentials, or release-sensitive configuration
+- Maintainer runbooks: `docs/distribution_plan.md`, `docs/godot_export_and_release.md` (private dev repository)
 
 ---
 
@@ -136,7 +136,7 @@ Bu depo **herkese açık vitrin** katmanıdır: tasarım niyeti, süreç doküma
 - Varsayılan olarak **ticari olmayan** playtest; nihai ürün değildir.
 - **`main` dalında oyun kaynağı yok.** Zip’ler repoya commit edilmez.
 
-Bakım akışı: [`docs/godot_export_and_release.md`](docs/godot_export_and_release.md) · Release metni şablonu: [`docs/release_playtest_template.md`](docs/release_playtest_template.md)
+Bakım: export → zip → Release adımları **özel geliştirme deposunda** (`docs/godot_export_and_release.md`). Release metni şablonu: [`docs/release_playtest_template.md`](docs/release_playtest_template.md).
 
 **Geri bildirim:** [Issues](https://github.com/umut-yasin-yilmaz/project-a-showcase/issues)
 
@@ -150,7 +150,6 @@ Bakım akışı: [`docs/godot_export_and_release.md`](docs/godot_export_and_rele
 | [`docs/qa_checklist.md`](docs/qa_checklist.md) | MVP + Demo test kapıları (**kalite kontrol listesi / QA**) |
 | [`docs/risk_register.md`](docs/risk_register.md) | **Risk kaydı** — üretim riskleri ve önlemler |
 | [`docs/credits_and_licenses.md`](docs/credits_and_licenses.md) | Godot MIT, credits, haklar |
-| [`docs/godot_export_and_release.md`](docs/godot_export_and_release.md) | Godot → zip → GitHub Release |
 | [`docs/release_playtest_template.md`](docs/release_playtest_template.md) | Release açıklaması şablonu |
 
 **Önerilen okuma sırası:** blueprint → QA checklist → risk register.
@@ -161,7 +160,7 @@ Bakım akışı: [`docs/godot_export_and_release.md`](docs/godot_export_and_rele
 
 **Bu vitrin reposunda bilerek olanlar:** vizyon, üst seviye oyun hedefleri, **MVP yayında** bağlamı, üretim içine sızmayan süreç dokümanları, portfolio için uygun ekran görüntüleri.
 
-**Yalnızca özel (private) geliştirme reposunda kalanlar:** tam oyun kaynağı ve mimari iç detaylar, ticari sanat/ses ve içerik hattı, uygulama düzeyinde denge tabloları (bu README ve blueprint’in özetlediğinin ötesinde), gizli bilgiler, dağıtıma duyarlı yapılandırma ve bakımcı dağıtım runbook’u (`docs/distribution_plan.md`).
+**Yalnızca özel (private) geliştirme reposunda kalanlar:** tam oyun kaynağı ve mimari iç detaylar, ticari sanat/ses ve içerik hattı, uygulama düzeyinde denge tabloları (bu README ve blueprint’in özetlediğinin ötesinde), gizli bilgiler, dağıtıma duyarlı yapılandırma, bakımcı runbook (`docs/distribution_plan.md`) ve Godot export → Release adımları (`docs/godot_export_and_release.md`).
 
 ---
 
