@@ -28,7 +28,7 @@ Do this **once** you are happy with the showcase content (no more half-finished 
 
 ## Step 1 — GitHub profile (after showcase is public)
 
-- **Pin** `project-a-showcase` on your GitHub profile (visible to visitors once the repo is public).
+- **Pin** `project-a-showcase` on your GitHub profile (visible to visitors once the repo is public). Click-by-click: [`docs/step1_pin_profile.md`](step1_pin_profile.md).
 - Optionally set **bio** and **website** (showcase URL, later Steam/Itch).
 
 **While the showcase is still private:** pinning helps only you on your profile; defer the “portfolio pin” until **Step 0.5** is done.
@@ -40,7 +40,7 @@ Do this **once** you are happy with the showcase content (no more half-finished 
 3. On GitHub: **project-a-showcase** → **Releases** → **Draft a new release**.
 4. Tag example: `playtest-0.1` or `pre-demo-2026-03` (avoid clashing with private dev repo tags if that matters to you).
 5. Title example: `Pre-demo playtest (not Steam demo)`.
-6. Description: short notes + “**Pre-demo only**; final demo will be on Steam.”
+6. Description: use or adapt [`docs/release_playtest_template.md`](release_playtest_template.md) (copy-paste English + optional Turkish block).
 7. Attach the zip as a release asset; **Publish**.
 
 **Note:** If you publish a Release **while the repo is still private**, testers need **GitHub access** (or send the zip elsewhere). After the repo is **public**, Release downloads work like any public GitHub project.
