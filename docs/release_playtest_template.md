@@ -33,15 +33,22 @@ Attach your **zipped Windows export** as the release asset (do not commit the zi
 - Development uses **AI as an implementation assistant**; design acceptance is manual. See repository README for workflow context.
 ```
 
-## Kısa Türkçe not (isteğe bağlı)
-
-```markdown
-
----
-
-**Türkçe:** Geliştirme / **playtest** sürümüdür; ticari nihai sürüm değildir. Zip’i açıp **ProjectA.exe**’yi çalıştırın; klasördeki dosyaları ayırmayın.
-```
-
 ## After publish
 
 - Confirm the Release appears on [**Releases**](https://github.com/umut-yasin-yilmaz/project-a-showcase/releases) and the zip downloads cleanly from a logged-out browser if the repository is public.
+
+---
+
+## Türkçe
+
+**Akış:** Export ve zip adımları **private `project-a`** içinde `docs/godot_export_and_release.md` dosyasında. Zip’i **`main`**’e commit etme; Release’e ekle.
+
+**Etiket / başlık örnekleri:** `playtest-0.1` veya `build-YYYY-MM-DD`; başlık örn. `Windows playtest build`.
+
+**Açıklamaya yapıştırılabilir kısa Türkçe not (isteğe bağlı):**
+
+```markdown
+**Türkçe:** Geliştirme / **playtest** sürümüdür; ticari nihai sürüm değildir. Zip’i açıp **ProjectA.exe**’yi çalıştırın; klasördeki dosyaları ayırmayın.
+```
+
+Yayın sonrası: [**Releases**](https://github.com/umut-yasin-yilmaz/project-a-showcase/releases) sayfasında zip’in indirildiğini doğrula (repo public ise gizli pencerede de kontrol edebilirsin).

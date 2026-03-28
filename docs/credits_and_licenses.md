@@ -31,3 +31,9 @@
 ---
 
 *Update this file when you add third-party assets, fonts, music, or middleware.*
+
+---
+
+## Türkçe
+
+**Oyun:** Project A tasarım/kod/seçilmiş materyaller **© Umut Yasin YILMAZ**, **tüm hakları saklıdır**. Bu depo vitrin/doküman katmanı; tam kaynak private. **Motor:** Godot **MIT** — dağıtımda Godot’un üçüncü taraf bildirimlerini koru. **Ses (MVP):** Placeholder wav’lar private repoda prosedürel üretildi; yükseltmede lisanslı/asset güncelle ve bu dosyayı güncelle. **Geliştirme:** Yapay zekâ **uygulama asistanı**; tasarım önceliği ve kabul **manuel**. **Playtest zip’leri:** Varsayılan **ticari değil**; Godot lisansına tabi çalışma zamanı içerir.

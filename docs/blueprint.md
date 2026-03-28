@@ -1,64 +1,80 @@
 # Blueprint (v0) — Brotato-like 2D (Godot 4.6.1, GDScript)
 
 ## 1) One-sentence pitch
-- Bu oyun: Tek bir karakterle dalga dalga düşmanları kesip, düşen materyalleri toplayarak tur sonunda marketten eşya/güçlendirme alıp güçlendiğin ve toplam 5 dalga hayatta kalmayı hedeflediğin 2D bir roguelite run deneyimi.
+
+- A **2D roguelite run** where you clear wave after wave as one character, collect materials, buy items/upgrades between rounds at the shop, and aim to **survive 5 waves**.
 
 ## 2) Target player / session
-- **Target player**: Vampire Survivors veya Brotato gibi 2D roguelite/roguelike oyunları oynamayı seven oyuncular.
-- **Target session length (5 dalga run)**: Dalga süreleri: 1. dalga **60 sn**; sonraki her dalga bir öncekinden **+15 sn** (2→75 sn, 3→90 sn, 4→105 sn, 5→120 sn). **Toplam ≈ 7,5 dk** (450 sn) — kazanma koşulu 5 dalga hayatta kalmak.
-- **Platform**: PC (Steam)
+
+- **Target player:** Players who enjoy **2D roguelite / roguelike** games such as *Vampire Survivors* or *Brotato*.
+- **Target session length (5-wave run):** Wave durations: wave 1 **60 s**; each next wave **+15 s** vs the previous (2→75 s, 3→90 s, 4→105 s, 5→120 s). **Total ≈ 7.5 min** (450 s) — win condition is surviving **5 waves**.
+- **Platform:** PC (Steam)
 
 ## 3) Core gameplay loop (plain language)
-Oyuncu dalga boyunca düşmanları keser ve materyal toplar → oyun yeni düşman dalgalarıyla baskıyı artırır → oyuncu dalga sonunda marketten eşya/güçlendirme satın alarak build’ini şekillendirir → 5 dalgayı hayatta kalırsa kazanır (ölürse run biter).
 
-## 4) MVP / Vertical Slice (ilk “tam oynanabilir dilim”)
+The player fights and collects materials during a wave → pressure rises with new enemy waves → between waves the player spends materials at the **shop** to shape their build → surviving **5 waves** wins the run (death ends the run).
+
+## 4) MVP / vertical slice (first “fully playable slice”)
+
 ### Definition of “done”
+
 - **Must have**
-  - Player hareket + temel kontrol
-  - Düşmanlar spawn olur ve oyuncuya yaklaşır
-  - Basit hasar/ölüm (oyuncu ve düşman için)
-  - Wave/süre ilerler ve bir “fail condition” vardır (ölüm veya süre biter)
-  - Dalga arası market: toplanan materyalle en az 1 satın alma / güçlendirme seçimi (MVP’de sınırlı ürün listesi yeter)
-- **Nice to have (sonra)**
-  - Ses/partikül/polish
-  - Çoklu silah/upgrade çeşitliliği
+  - Player movement + basic controls
+  - Enemies spawn and move toward the player
+  - Simple damage/death (player and enemies)
+  - Wave/timer progression and a **fail condition** (death or time running out)
+  - Between-wave **shop:** at least one purchase/upgrade choice with collected materials (limited product list is enough for MVP)
+- **Nice to have (later)**
+  - Audio/particles/polish
+  - More weapon/upgrade variety
 
-## 5) NOT IN THIS GAME (scope kalkanı)
-MVP ve ilk demo için aşağıdaki sistemler **bilinçli olarak yok** (Brotato / VS tarzı çekirdeğe odaklanmak için):
+## 5) NOT IN THIS GAME (scope shield)
 
-- Multiplayer / co-op yok
-- PvP yok
-- Açık dünya / büyük harita keşfi yok
-- Hikâye / diyalog / uzun metinler yok (MVP ve demo öncesi)
-- Crafting (malzeme ile eşya üretme) yok
-- Base building (üs kurma) yok
-- Metroidvania tarzı kalıcı harita ilerleme yok
-- Karmaşık envanter yönetimi (grid, ağırlık vb.) yok
-- Procedural dünya / oda üretimi yok
-- Online leaderboard / cloud save yok (ilk sürümlerde)
+For MVP and first demo, these systems are **intentionally out of scope** (focus on a Brotato/VS-style core):
 
-**Belki sonra (demo / erken erişim sonrası, ayrı karar):** Çok kısa flavor metin veya mini hikâye — blueprint v1’de netleştirilir; MVP’yi şişirmemek için şimdilik dışarıda.
+- No multiplayer / co-op  
+- No PvP  
+- No open world / large-map exploration  
+- No story / dialogue / long text (before MVP and demo)  
+- No crafting (making items from materials)  
+- No base building  
+- No Metroidvania-style persistent map progression  
+- No complex inventory (grid, weight, etc.)  
+- No procedural world / room generation  
+- No online leaderboard / cloud save (early versions)
 
-## 6) Game pillars (3 madde)
-1. **Yüksek tekrar oynanabilirlik:** Run’lar **kısa** ve **tekrarlanabilir**; oyuncu “bir tur daha” diyebileceği tempoda kalsın.
-2. **Dalgalar arası seçim:** **Toplanan materyalle** marketten **silah veya güçlendirme** satın alarak build’ini şekillendirmek — run’un stratejik omurgası bu.
-3. **Öngörülebilir zorluk:** Zorluk eğrisi öngörülebilir artar; **“haksız” ani sıçramalar** yok. Dalga ilerledikçe baskı artsın ama oyuncu “neden şimdi bu kadar zor?” demesin; sıkıcı düz çizgi veya sebepsiz zorluk sıçraması hedeflenmez.
+**Maybe later (post-demo / EA, separate decision):** Very short flavor text or mini story — clarified in blueprint v1; kept out now to avoid MVP bloat.
 
-## 7) Minimal milestones (çok kısa)
-- **M0 — Vertical Slice**: Bölüm 4 “done” şartları sağlandı.
-- **M1 — Alpha**: Core loop + 2–3 düşman + 2–3 upgrade, UI temel; crash yok.
-- **M2 — Beta**: İçerik “yeterli” (örn. 10 upgrade, 5 düşman), balans turu; performans kabul edilebilir.
-- **M3 — RC / Steam-ready**: Export alınır, store build çalışır; kritik bug yok.
+## 6) Game pillars (3 items)
 
-## 8) Open questions (AI’ye ve bana hatırlatıcı) — kararlar (MVP)
-- **Saldırı modeli:** **Otomatik saldırı (VS benzeri)** — oyuncu hareket + kaçınma; silahlar kendi vurur. MVP’de nişanlı / manuel ateş yok.
-- **Meta progression:** **MVP’de yok.** Sadece run içi materyal + dalga arası market; her run sıfırdan (kalıcı unlock / meta para yok). İleride “oyuncu sıkılıyor mu?” sorusuna göre hafif meta ayrı karar.
+1. **High replayability:** Runs stay **short** and **repeatable**; pacing supports “one more run.”
+2. **Choices between waves:** Spending **collected materials** at the shop on **weapons or upgrades** is the strategic spine of the run.
+3. **Predictable difficulty:** Difficulty ramps in a **readable** way; avoid **unfair spikes**. Pressure should rise with wave count without the player asking “why is it suddenly this hard?” — avoid boring flat lines or unmotivated jumps.
+
+## 7) Minimal milestones (short)
+
+- **M0 — Vertical slice:** Section 4 “done” criteria met.
+- **M1 — Alpha:** Core loop + 2–3 enemies + 2–3 upgrades, basic UI; no crashes.
+- **M2 — Beta:** Enough content (e.g. 10 upgrades, 5 enemies), balance pass; acceptable performance.
+- **M3 — RC / Steam-ready:** Export works, store build runs; no critical bugs.
+
+## 8) Decisions (MVP)
+
+- **Attack model:** **Auto-attack (VS-like)** — player focuses on movement and dodging; weapons hit on their own. No aimed/manual fire in MVP.
+- **Meta progression:** **None in MVP.** Only in-run materials + between-wave shop; every run starts fresh (no persistent unlocks / meta currency). Light meta later if “players getting bored?” suggests it.
 
 ## 9) MVP balance goals
-İlk oynanabilir sürüm için **6 adet** denge hedefi (tempo, dalga eğrisi, TTK bandı, ekonomi/market, seçim anlamı, ölüm hissi) ve sayısal v0 hipotezleri, **ayrıntılı denge notları** ile birlikte **özel geliştirme deposundaki** `docs/mvp_balance_goals.md` dosyasında tutulur; playtest ile güncellenir.
 
-**Ölçekleme (v0, özet):** Zorluk öncelikle **spawn / baskı** ile artar; düşman **HP** doğrusal çarpanla (`×1.00` … `×1.40`, 5 dalga). Ekonomi: **2 materyal/öldürme**, tavan **60**, en ucuz teklif **30**.
+Six balance targets (pacing, wave curve, TTK band, economy/shop, choice value, death clarity) and numeric v0 hypotheses live in **`docs/mvp_balance_goals.md`** in the **private dev repository**, updated with playtests.
 
-## 10) Geliştirme planları (bu vitrin deposunda)
-Bu repoda **yüksek seviye** blueprint, [`qa_checklist.md`](qa_checklist.md) ve [`risk_register.md`](risk_register.md) bulunur. **Sprint tabloları, ayrıntılı MVP→Demo planları ve CSV takip dosyaları** ticari süreç için **özel geliştirme deposunda** kalır; vitrin ile orayı senkron tutmak bakımcının sorumluluğundadır.
+**Scaling (v0, summary):** Difficulty rises mainly via **spawn pressure**; enemy **HP** uses a linear multiplier (`×1.00` … `×1.40` across 5 waves). Economy: **+2 material per kill**, cap **60**, cheapest offer **30**.
 
+## 10) Planning artifacts in this showcase repo
+
+This repo holds high-level **blueprint**, [`qa_checklist.md`](qa_checklist.md), and [`risk_register.md`](risk_register.md). **Sprint tables, detailed MVP→Demo plans, and CSV trackers** stay in the **private dev repository**; keeping showcase and private docs in sync is the maintainer’s responsibility.
+
+---
+
+## Türkçe
+
+**Özet:** Tek karakterle **5 dalgalık** kısa roguelite koşusu; materyal topla, dalgalar arası **marketten** build kur, **Brotato / Vampire Survivors** tarzı çekirdek. **PC (Steam)** hedefi; otomatik saldırı, MVP’de **meta ilerleme yok**. Zorluk öncelikle **spawn baskısı** ve dalgaya göre **HP çarpanı** ile artar. Kapsam dışı: çok oyunculu, crafting, açık dünya, hikâye vb. — tam liste yukarıdaki **NOT IN THIS GAME** bölümünde. Ayrıntılı denge sayıları ve sprint tabloları **özel geliştirme deposunda**; bu dosya vitrin için üst seviye blueprint’tir.
