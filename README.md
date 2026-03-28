@@ -46,7 +46,7 @@ This repository is the **public showcase**: design intent, process artifacts, sc
 - **Non-commercial** playtest drops unless a release explicitly states otherwise. Not a finished commercial product.
 - **No game source on `main`.** Zips are **not** committed to git—only attached to Releases.
 
-Maintainer: export → zip → Release steps live in the **private dev repo** (`docs/godot_export_and_release.md`). Release notes template: [`docs/release_playtest_template.md`](docs/release_playtest_template.md).
+Maintainer: export → zip → Release steps live in the **private dev repository** (not in this public tree). Release notes template: [`docs/release_playtest_template.md`](docs/release_playtest_template.md).
 
 **Feedback:** [Issues](https://github.com/umut-yasin-yilmaz/project-a-showcase/issues) welcome with build tag and repro steps.
 
@@ -80,7 +80,7 @@ Maintainer: export → zip → Release steps live in the **private dev repo** (`
 - Commercial art, audio, and content pipeline
 - Implementation-level balance tables beyond what this README and blueprint summarize
 - Secrets, credentials, or release-sensitive configuration
-- Maintainer runbooks: `docs/distribution_plan.md`, `docs/godot_export_and_release.md` (private dev repository)
+- Maintainer-only runbooks for export, packaging, and distribution (private dev repository only — not linked here)
 
 ---
 
@@ -136,7 +136,7 @@ Bu depo **herkese açık vitrin** katmanıdır: tasarım niyeti, süreç doküma
 - Varsayılan olarak **ticari olmayan** playtest; nihai ürün değildir.
 - **`main` dalında oyun kaynağı yok.** Zip’ler repoya commit edilmez.
 
-Bakım: export → zip → Release adımları **özel geliştirme deposunda** (`docs/godot_export_and_release.md`). Release metni şablonu: [`docs/release_playtest_template.md`](docs/release_playtest_template.md).
+Bakım: export → zip → Release adımları **özel geliştirme deposunda** (bu public ağaçta yok). Release metni şablonu: [`docs/release_playtest_template.md`](docs/release_playtest_template.md).
 
 **Geri bildirim:** [Issues](https://github.com/umut-yasin-yilmaz/project-a-showcase/issues)
 
@@ -160,7 +160,7 @@ Bakım: export → zip → Release adımları **özel geliştirme deposunda** (`
 
 **Bu vitrin reposunda bilerek olanlar:** vizyon, üst seviye oyun hedefleri, **MVP yayında** bağlamı, üretim içine sızmayan süreç dokümanları, portfolio için uygun ekran görüntüleri.
 
-**Yalnızca özel (private) geliştirme reposunda kalanlar:** tam oyun kaynağı ve mimari iç detaylar, ticari sanat/ses ve içerik hattı, uygulama düzeyinde denge tabloları (bu README ve blueprint’in özetlediğinin ötesinde), gizli bilgiler, dağıtıma duyarlı yapılandırma, bakımcı runbook (`docs/distribution_plan.md`) ve Godot export → Release adımları (`docs/godot_export_and_release.md`).
+**Yalnızca özel (private) geliştirme reposunda kalanlar:** tam oyun kaynağı ve mimari iç detaylar, ticari sanat/ses ve içerik hattı, uygulama düzeyinde denge tabloları (bu README ve blueprint’in özetlediğinin ötesinde), gizli bilgiler, dağıtıma duyarlı yapılandırma ve bakımcı runbook’ları (export, paketleme, dağıtım — burada linklenmez, yalnızca private depoda).
 
 ---
 
