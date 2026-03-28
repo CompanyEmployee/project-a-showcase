@@ -1,97 +1,95 @@
-# Project A Showcase
+# Project A — Public showcase
 
-Public-facing showcase for **Project A**.  
-Main development repository is private to protect commercial production content.
+Vitrin deposu: **Project A**’nın **MVP (`mvp-0.1`)** ile uyumlu, herkese açık özet.  
+Asıl geliştirme ve ticari içerik **private** repoda kalır.
 
-**Milestone:** **MVP shipped** — `MVP-01` → `MVP-22` complete in the private repo; Git tag **`mvp-0.1`**.  
-**Current focus:** Demo / portfolio-facing updates (screenshots, README, safe docs) while keeping source and assets private.
+![Project A MVP showcase banner](assets/showcase/hero-mvp.svg)
 
-## Overview
-
-Project A is a 2D roguelite/survivor-like game inspired by Brotato-style pacing.
-
-Core loop:
-- Fight enemies in timed waves
-- Collect materials from defeated enemies
-- Buy upgrades between waves
-- Survive the full run
-
-## Shipped MVP (showcase view)
-
-- Engine: Godot 4.6.1
-- Language: Typed GDScript (production)
-- Target platform: PC (Steam-first)
-- Development model: AI-assisted solo developer workflow
-- Public objective: demonstrate process quality, shipped MVP discipline, and direction safely (no full source here)
-
-## Public Repository Purpose
-
-This repository is intentionally curated to show:
-- Design direction and MVP boundaries
-- Development discipline and planning quality
-- Progress and **milestone completion** suitable for portfolio/recruiting
-
-## Professional Workflow
-
-Project A follows a structured production workflow:
-- Scope control through blueprint and explicit non-goals
-- MVP and Demo roadmap with completion criteria
-- QA checklist gates before milestone closure
-- Risk register tracking for recurring production risks
-- Small, checkpoint-style updates with clear intent
-
-## Included Public Documents
-
-- `docs/blueprint.md` (project pitch, target session, core loop)
-- `docs/qa_checklist.md` (test gate checklist)
-- `docs/risk_register.md` (production risk tracking)
-
-Workflow note:
-- AI is used as an implementation and iteration assistant.
-- Final design priorities and acceptance criteria are reviewed manually.
-
-## Public/Private Boundary
-
-### Public in this repository
-
-- Project vision and high-level gameplay goals
-- Safe progress updates and **MVP-shipped** milestone context
-- Process artifacts that do not expose production internals
-
-### Intentionally private
-
-- Full gameplay source code and architecture internals
-- Commercial art/audio assets and content pipeline
-- Implementation-level balance/tuning and deployment details
-- Any secrets, credentials, or release-sensitive information
-
-## Why this strategy
-
-For a commercial indie project, this setup balances:
-- **Protection:** main production content stays private
-- **Visibility:** consistent public proof of progress and professionalism
-- **Credibility:** clear workflow and milestone-based execution
-
-## Status
-
-**MVP is complete** in the private main repository (`mvp-0.1`).  
-This showcase repo is updated with **safe, portfolio-ready** context aligned with that milestone.
+**Bu sayfa hangi sürümü temsil ediyor?** Public özet ve görseller **MVP milestone** (`mvp-0.1`, private repoda `MVP-01` → `MVP-22`) ile hizalıdır; canlı üretim kodu ve assetler burada yoktur.
 
 ---
 
-## Türkçe Kısa Özet
+## Şimdi · Sırada
 
-Bu depo, `Project A` için herkese açık vitrin deposudur.  
-Oyunun asıl geliştirme deposu, ticari içerik ve üretim detaylarını korumak için private tutulur.
+| Şimdi | Sırada (public vitrin) |
+|--------|-------------------------|
+| MVP tamamlandı; bu repo süreç + yön + güvenli dokümanlarla hizalı | Demo / mağaza yüzüne uygun ek görseller veya kısa gameplay kaydı (isteğe bağlı) |
+| README ve `docs/` ile portfolio/recruiting için okunabilir kanıt | İleride Itch / Steam bağlantıları bu vitrine eklenebilir |
 
-**MVP tamamlandı** (private repoda `mvp-0.1`); bu depo süreç, yön ve güvenli dokümanlarla hizalanır.
+---
 
-Bu public showcase içinde:
-- Projenin yönü ve MVP kapsamı
-- Geliştirme disiplinini gösteren profesyonel süreç yaklaşımı
-- Güvenli ve paylaşılabilir ilerleme bilgileri
+## Oyun özeti
 
-Bilerek paylaşılmayanlar:
-- Tam kaynak kod
-- Ticari varlıklar (asset/pipeline detayları)
-- Gizli bilgiler ve release süreç detayları
+**Project A**, Brotato tarzı tempolu **2D roguelite / survivor-like** bir yapım.
+
+**Çekirdek döngü**
+- Zamanlı dalgalarda düşmanlarla savaş
+- Düşen materyalleri topla
+- Dalgalar arası yükseltme satın al
+- Koşuyu sonuna kadar taşı
+
+### Gösterim medyası (isteğe bağlı)
+
+Gerçek oyun görüntüsü eklemek için `assets/showcase/` klasörüne bakın. Önerilen dosya adları: `mvp-gameplay.gif`, `mvp-01-wave.png`, … — ayrıntı: [assets/showcase/README.md](assets/showcase/README.md).
+
+---
+
+## Shipped MVP (showcase görünümü)
+
+- **Motor:** Godot 4.6.1  
+- **Dil:** Typed GDScript (production)  
+- **Hedef:** PC (Steam-first)  
+- **Model:** AI destekli solo geliştirme; kabul kriterleri ve tasarım öncelikleri manuel  
+- **Public amaç:** Kaynak sızdırmadan süreç kalitesi ve milestone disiplinini göstermek  
+
+---
+
+## Bu reponun amacı
+
+- Tasarım yönü ve MVP sınırları  
+- Planlama ve QA / risk disiplini  
+- **Tamamlanmış MVP** bağlamında portfolio/recruiting için güvenli kanıt  
+
+## Süreç özeti (AI destekli solo)
+
+- Blueprint ve açık **non-goals** ile kapsam kontrolü  
+- MVP / demo yol haritası ve kapanış kriterleri  
+- Milestone öncesi **QA checklist** kapıları  
+- Tekrarlayan riskler için **risk register**  
+- Küçük, niyeti net checkpoint commit’leri  
+
+---
+
+## Önerilen okuma sırası (`docs/`)
+
+1. [`docs/blueprint.md`](docs/blueprint.md) — pitch, oturum hedefi, çekirdek döngü  
+2. [`docs/qa_checklist.md`](docs/qa_checklist.md) — milestone test kapıları  
+3. [`docs/risk_register.md`](docs/risk_register.md) — üretim riskleri  
+
+---
+
+## Public / private sınırı
+
+**Bu repoda bilerek olanlar:** vizyon, üst seviye oyun hedefleri, MVP bağlamı, üretim sırlarına girmeyen süreç dokümanları.  
+
+**Private repoda kalanlar:** tam oyun kaynağı ve mimari iç detaylar, ticari sanat/ses ve pipeline, ince ayar/balance ve dağıtıma dair hassas bilgiler, gizli kimlik bilgileri.  
+
+---
+
+## Neden bu strateji?
+
+Ticari indie üretim için: **koruma** (ana içerik private), **görünürlük** (tutarlı public vitrin), **güvenilirlik** (net milestone ve süreç).  
+
+---
+
+## Status
+
+**MVP** private ana repoda **`mvp-0.1`** ile tamamlandı. Bu showcase, aynı milestone ile uyumlu **güvenli, vitrin** içeriği sunar.
+
+---
+
+## English (short)
+
+Public-facing showcase for **Project A** (2D roguelite / survivor-like, Godot 4.6.1). **MVP shipped** as tag `mvp-0.1` in the private dev repo. This repository contains **no full source or commercial assets**—only safe process docs and optional media you add under `assets/showcase/`. Main development stays private.
+
+**Suggested doc order:** [blueprint](docs/blueprint.md) → [QA checklist](docs/qa_checklist.md) → [risk register](docs/risk_register.md).
